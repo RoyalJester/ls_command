@@ -1,0 +1,9 @@
+myls: ls_command.o
+        gcc ls_command.o -o myls
+
+ls_command.o: ls_command.c
+        gcc -c ls_command.c
+
+clean:
+        rm -rf *o myls
+
